@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Yadav | @d4ggr</title>
+    <meta name="description" content="Portfolio of Ashutosh Yadav (@d4ggr) — Systems & Software Engineer focusing on operating systems, embedded firmware, and flight dynamics.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fullscreen Fixed Background Artwork -->
+    <div class="bg-backdrop"></div>
+    <div class="bg-overlay"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-symbol">/</span>d4ggr
+            </a>
+            <nav class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="page-container">
+
+        <!-- Hero Section (100vh Fullscreen) -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+
+                <!-- Looping Typewriter Heading -->
+                <h1 class="hero-title">
+                    <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+                </h1>
+
+                <p class="hero-tagline">Electrical Engineering Undergrad @VJTI</p>
+
+                <p class="hero-bio">
+                    Stuck in an unconventional Venn diagram: <strong>mechanical design meets embedded systems</strong>.
+                </p>
+                <p class="hero-bio-sub">
+                    I love tinkering at both extremes—optimizing 3D CAD models and tight physical tolerances on one end, and writing low-level C firmware on the other.
+                </p>
+                <p class="hero-bio-sub">
+                    When I'm not fighting UART registers or molten filament, you’ll usually find me deep down rabbit holes of military history and defense tech.
+                </p>      
+                <!-- Quick-Access Socials -->
+                <div class="quick-access">
+                    <a href="https://github.com/d4ggr" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                        <i data-lucide="github"></i>
+                        <span>GitHub</span>
+                    </a> 
+                    <a href="https://www.linkedin.com/in/ashutosh-yadav-896b602ab/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/d4ggrr" target="_blank" rel="noopener noreferrer" class="social-btn" title="X / Twitter">
+                        <i data-lucide="twitter"></i>
+                        <span>X / Twitter</span>
+                    </a>
+                    <a href="mailto:yadavxashutosh@gmail.com" class="social-btn" title="Send Email">
+                        <i data-lucide="mail"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+
+                <!-- Scroll Down Prompt -->
+                <a href="#projects" class="scroll-prompt">
+                    <i data-lucide="arrow-down" class="arrow-bounce"></i>
+                    <span>View projects</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- Project 1: slicer -->
+                <div class="card project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">slicer</h3>
+                        <a href="https://github.com/d4ggr/slicer" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                    <p class="project-desc">
+                        A fast mesh-to-voxel slicing engine in C designed for processing 3D OBJ geometry into voxelized layers, slices, and toolpaths.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">3D Geometry</span>
+                        <span class="tag">Voxelization</span>
+                        <span class="tag">Graphics</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: kernelcraft -->
+                <div class="card project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">kernelcraft</h3>
+                        <a href="https://github.com/d4ggr/kernelcraft" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                    <p class="project-desc">
+                        A bare-metal operating system for the Raspberry Pi 4 (ARM64), featuring custom boot routines, MMU initialization, UART serial drivers, and interrupt handling.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">ARM64</span>
+                        <span class="tag">Raspberry Pi 4</span>
+                        <span class="tag">Bare Metal</span>
+                        <span class="tag">OS Dev</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="card contact-card">
+                <p class="contact-subtitle">
+                    Interested in collaborating, discussing low-level systems, or exploring open opportunities? Reach out anytime.
+                </p>
+                <div class="contact-actions">
+                    <a href="mailto:contact@d4ggr.io" class="btn primary-btn">
+                        <i data-lucide="mail"></i>
+                        <span>Get In Touch</span>
+                    </a>
+                    <a href="https://github.com/d4ggr" target="_blank" rel="noopener noreferrer" class="btn secondary-btn">
+                        <i data-lucide="github"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Ashutosh Yadav (<span class="code-font">@d4ggr</span>). All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
